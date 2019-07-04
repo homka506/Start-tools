@@ -1,0 +1,51 @@
+footer{
+   background: $black;
+   color:$light-primary;
+   font-size: 15px;
+
+   ul{
+       margin-left:0;
+   }
+   li{
+       list-style: none;
+       padding-bottom:27px;
+       a{
+        color:$light-primary;
+           &:hover{
+               color:$button-background-hover;
+               text-decoration: underline;
+           }
+       }
+   }
+}
+.footer__item{
+   padding-top:48px;
+}
+.footer__title{
+       color:$white;
+   }
+
+.form-registration-member-socials{
+    margin-top:33px;
+}
+.ba-socials{
+    align-items: center;
+    padding:10px 0;
+
+}
+.form-registration-member-socials{
+        a{
+             align-items: center;
+             justify-content: center;
+            color:$white;
+            padding:8px 12px;
+            &:hover{
+                color:$button-background-hover;
+            }
+    }
+        }
+    
+.ba-copyright{
+    padding:26px 0;
+    color:26px;
+}

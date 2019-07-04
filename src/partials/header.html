@@ -1,0 +1,301 @@
+<header class="ba-header-wrap" id="header">
+    <div class="ba-header-topline">
+        <div class="row align-middle">
+    <ul class="ba-header-topline_currency show-for-medium align-middle">
+    <li>
+    USD 
+    </li>
+    <li class="ba-header-topline--medium">
+    28.17
+    </li>
+    </ul>
+    <!-- /ul ba-header-topline_currency-->
+    <ul class="ba-header-topline__schedule show-for-medium align-middle">
+        <li>
+        <img src="{{root}}assets/img/header_clock.png" alt="Clock">
+        </li>   
+        <li>
+         Пн-Пт. 8:00-21:00 |
+        </li>
+        <li>
+        Сб. 9:00-20:00 |
+        </li>
+        <li>
+        Вс. 10:00-19:00
+        </li>
+    </ul>  
+    <!--/ba-header-topline_schedule  -->
+    <ul class="ba-header-topline__phone align-middle">
+            <li>
+            <ul class="ba-header-topline__handset align-middle">
+                <li>
+                    <img class="ba-header-topline--medium" src="{{root}}assets/img/haeder_phone.png" alt="Phone">
+                </li>
+                <li >
+                     <a class="ba-header-topline--medium" href=#> 0-800-338-571</a>
+                </li>
+            </ul>
+                    <!-- /ba-header-topline__handset -->
+                    </li>   
+        <li>
+            Бесплатно по Украине
+        </li>
+    </ul>
+    <!-- ba-header-topline__phone -->
+    <ul class="ba-header-topline__sing_in show-for-medium align-middle">
+            <li>
+                    <img src="{{root}}assets/img/header_sing_in.png" alt="Sing in">
+                    </li>   
+                <li>
+                            
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="btn btn-primary">Вход/ </a>
+                    <div style="display: none;" id="modal">
+                        <div class="ba-header-topline__form-registration">
+                            <div class="row column">
+                            <h3 class="form-registration__title section__title text-center">Вход</h3>
+                                <div class="row">
+                            <form class="form-registration-group">
+                                <div class="column small-12">
+                              <input class="form-registration-input"  type="email" required placeholder="Введите E-mail*">
+                              <input class="form-registration-password" type="password" required placeholder="Введите пароль*">
+                              <div class="form-registration-checkbox">
+                                <input type="checkbox" id="scales" name="scales"
+                                       checked>
+                                <label for="scales">Запомнить меня</label>
+                                <a href="#">Забыли пароль?</a>
+                              </div>
+                              <button class="button form-registration__button">
+                                    Войти
+                                </button>  
+
+                              <div class="form-registration-member-signin text-left">
+                                 <p> Войти с помощью социальных сетей </p>
+                              <a href="#" target="_blank" aria-label="Google+">
+                                <svg width="42" height="42">
+                                    <use xlink:href="#icon-google" />
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com" target="_blank" aria-label="Facebool">
+                                <svg width="42" height="42">
+                                    <use xlink:href="#icon-facebook2" />
+                                </svg>
+                            </a>
+                        </div>
+                        <!--/form-registration-member-signin  -->
+                              <div class="row">
+                                <div class="column small-6">
+                                <button class=" button form-registration__button">
+                                    Регистрация
+                                </button> 
+                                </div>
+                                 <!--/column small-6  -->
+                                <div class="column small-6 show-for-medium">
+                                <p class="form-registration__text text-left">
+                                    Зарегистрировавшись 
+                                вы сможете просматривать 
+                                историю покупок.
+                            </p>
+                        </div>
+                        <!-- / column small-6-->
+                            </div>
+                        </div>
+                        <!-- / row-->
+                            </form>
+                        </div>
+                        <!-- /column small-12 -->
+                        </div>
+                        <!-- /row -->
+                        </div>
+                        <!-- /row colymn -->
+                          </div>
+                          <!-- /ba-header-topline__form-registration -->
+                      
+                      
+                    </li>
+                    <li>
+                            <a href=#>Регистрация</a>
+                        </li>
+            </ul>
+        <!-- ba-header-topline__sing_in -->
+        <div class="ba-header-topline__languages show-for-medium">RU
+                <img class="ba-header-topline__languages" src="{{root}}assets/img/arrow.png" alt="Arrow">
+
+            <ul class="ba-header-topline__languages__content aligh-middle">
+              <li><a class="hide-on-click" href="#">RU</a></li>
+              <li><a class="hide-on-click" href="#">UA</a></li>
+            </ul>
+            <!-- ba-header-topline__languages__content -->
+          </div>
+          <!-- /ba-header-topline__languages -->
+    </div>
+    <!-- / row align-middle-->
+    </div>
+    <!-- / ba-header-topline-->
+    <div class="header-header">
+        <div class="row  column">
+                <div class="ba-header-bar  flex-container align-justify align-middle">
+                    <div class="ba-header-bar__left flex-container align-middle">
+                        <a href="/">
+                                <img src="{{root}}assets/img/header_logo.png" alt="Logo">
+
+                                <p class="text-center">Официальный сайт компании</p>
+
+                            </a>
+                        </div>
+                        <!-- /ba-header-bar-left -->
+                        <button class="menu-icon dark hide-for-medium  flex-container aligh-medium" type="button" data-open="offCanvas" aria-label="Show menu">
+                        </button>
+
+                                        <div class="ba-header-bar__center  show-for-medium  flex-container">
+                                    <ul class="menu ba-main-menu">
+                                        <li class="ba-main-menu__item"{{#ifpage 'index'}} {{/ifpage}}>
+                                            <a href="index.html">
+                                                Доставка и оплата
+                                            </a>
+                                        </li>
+                                                <li class="ba-main-menu__item" id="header_blog"{{#ifpage 'index'}} {{/ifpage}}>
+                                                  <a  href="#">
+                                                      Блог 
+                                                      <img src="{{root}}assets/img/arrow_blog.png" alt="Arrow">
+                                                    </a>
+                                                  <ul class="ba-main-menu__blog__submenu">
+                                                    <li><a class="hide-on-click_blog" href="#">Новости</a></li>
+                                                    <li><a class="hide-on-click_blog" href="#">Видео</a></li>
+                                                  </ul>
+                                                </li>
+                                                
+                                             
+                                        <li class="ba-main-menu__item" {{#ifpage 'index'}} {{/ifpage}}><a href="#">Контакты</a></li>
+                                        <li class="ba-main-menu__item" id="header_service" {{#ifpage 'index'}} {{/ifpage}}>
+                                            <a href="#">Помощь 
+                                                <img src="{{root}}assets/img/arrow_blog.png" alt="Arrow">
+                                            </a>
+                                            <ul  class="ba-main-menu__service__submenu">
+                                                <li>
+                                                    <a href="#">Сервисное обслуживание
+                                                        
+
+                                                </a></li>
+                                                <li><a class="hide-on-click_service" href="#">Условия сотрудничества</a></li>
+                                                <li><a class="hide-on-click_service" href="#">Задать вопрос</a></li>
+                                                <li><a class="hide-on-click_service" href="#">Справочные материлы</a></li>
+                                              </ul>
+                                        </li>                    
+                                    </ul>
+                                    <button class="ba-main-menu__button ba-main-menu__item">
+                                        Дополнительная гарантия
+                                    </button>
+
+                                                                   
+        </div>
+        <!-- ba-header-bar__center  -->
+    </div>
+       <!-- /ba-header-bar -->
+</div>
+   <!-- /row row  column-->
+  </div>
+    <!-- /header-header -->
+<div class="header_catalog">
+<div class="row flex">
+    <div class="columns large-3">
+              <ul class="dropdown menu flex-direction align-middle " data-dropdown-menu id="primary-menu">
+                <li> 
+                    <button class="header_catalog__button">
+                        
+                        
+                      КАТАЛОГ ТОВАРОВ
+                </button>
+                <ul class="menu flex-direction align-justify" id="secondary-menu">
+                  <li>
+                        <a href="#">
+                            <img src="{{root}}assets/img/power_tool.png" alt="Power Tool">
+                            Электроинструмент
+                            <img src="{{root}}assets/img/header_search_arrow.png" alt="Arrow">
+                        </a>
+                    </li>
+                  <li>
+                        <a href="#">
+                            <img src="{{root}}assets/img/cordless_tool.png" alt="Cordless Tool">
+                            Аккумуляторный <br> инструмент
+                            <img src="{{root}}assets/img/header_search_arrow.png" alt="Arrow">
+                        </a>
+                       
+                  </li>
+                  <li>
+                        <a href="#"><img src="{{root}}assets/img/garden_tools.png" alt="Garden Tool">
+                            Садовый инструмент
+                            <img src="{{root}}assets/img/header_search_arrow.png" alt="Arrow">
+                        </a>
+                  </li>
+                  <li>
+                        <a href="#">
+                            <img src="{{root}}assets/img/equipment.png" alt="Cordless Tool">
+                            Оборудование
+                            <img src="{{root}}assets/img/header_search_arrow.png" alt="Arrow">
+                        </a>
+                        
+                  </li>
+                  <li>
+                        <a  href="#">
+                            <img src="{{root}}assets/img/spares.png" alt="Spares">
+                            Запчасти
+                            <img src="{{root}}assets/img/header_search_arrow.png" alt="Arrow">
+                        </a>
+                        
+                  </li>
+                  <li>
+                        <a  href="#">
+                            <img src="{{root}}assets/img/promotions.png" alt="Promotions">
+                            Акции
+                            <img src="{{root}}assets/img/header_search_arrow.png" alt="Arrow">
+                        </a>
+                    
+                  </li>
+                  <li>
+                        <a  href="#">
+                            <img src="{{root}}assets/img/discounted_items.png" alt="Discounted items">
+                            Уцененные товары
+                            <img src="{{root}}assets/img/header_search_arrow.png" alt="Arrow">
+                        </a>
+                      
+                  </li>
+                </ul>
+                </li>
+              
+              </ul>
+            </div>
+            <!-- /col-3 -->
+            <div class="columns large-6">
+                    <div class="input-group show-for-medium">
+                           
+                            <input class="input-group-field" type="search" placeholder="Введите для поиска">
+                            <div class="input-group-button">
+                                </div>
+                          </div>
+            </div>
+                <!-- / col-6-->
+                <div class="columns large-1">
+            <div class="header__compare text-center align-middle">
+                   <a href=""> <img src="{{root}}assets/img/compare.png" alt="Libra"></a>
+                <p>Сравнить</p>
+    
+            </div>
+            <!-- /header__compare -->
+        </div>
+        <!-- /columns large-1 -->
+        <div  class="columns large-1">
+            <div class="header__basket text-center align-middle">
+                   <a href=""> <img src="{{root}}assets/img/basket.png" alt="Basket"></a>
+                <p>Корзина</p>
+            </div>
+            <!-- /header__basket-->
+        </div>
+        <!-- / columns large-1-->
+
+</div>
+<!-- /row -->
+</div>
+
+
+</header>
+

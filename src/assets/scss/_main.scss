@@ -1,0 +1,326 @@
+body{
+  background: $white;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right:0;
+ transform: translateY(-50%);
+a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+}
+
+
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+  .ba-section__intro {
+    margin:220px 0 64px 0;
+    height:100%;
+  }
+  .ba-intro{
+    &__img {
+      position: relative;
+      max-width: 100%;
+      margin: 0 auto;
+   
+    }
+    &__decor--left{
+      position: absolute;
+      width:3%;
+      height:100%;
+      z-index: 1;
+      top:0;
+      left:0;
+      background: #454444;
+      opacity: 0.1;
+      &:hover{
+        opacity: 0.3;
+       
+      }
+    }
+    &__decor--rignh{
+      position: absolute;
+      width:3%;
+      height:100%;
+      z-index: 1;
+      top:0;
+      right:0;
+      background: #454444;
+      opacity: 0.1;
+      &:hover{
+        opacity: 0.3;
+       
+      }
+    }
+  }
+
+  
+  .slick-dots {
+    position: absolute;
+    top:90%;
+    left:0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      padding: 0 5px;
+    }
+    button {
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      font-size: 0;
+      border: none;
+      border-radius: 50%;
+      border: 1px solid $white;
+      padding: 0;
+      &:hover,
+      &:focus {
+        background-color: $white;
+        opacity: 0.6;
+        outline: none;
+      }
+    }
+    .slick-active {
+      button {
+        background-color: #ffcb00;
+      }
+    }
+  }
+  
+  
+  .ba-intro-slider {
+    position: relative;
+    margin: 0 auto;
+   
+    &__arrows {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+    
+      [data-prev],
+      [data-next] {
+        position: absolute;
+        transform: translateY(-100%);
+        &:hover{
+          cursor: pointer;
+         }
+       
+      }
+      [data-prev] {
+        left: 0;
+       
+      }
+      [data-next] {
+        right: 0;
+      }
+    }
+  }
+  .section__title{
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+  
+  }
+  
+.shop{
+  margin:0 0 64px;
+  &__section__title{
+    position: relative;
+  
+    &:before{
+      content: "";
+      height: 5px;
+      width:100px;
+      position: absolute;
+      top:0;
+      left:0;
+      color:$black;
+    }
+  }
+  &__item{
+    padding: 0 0 0 20px;
+    position:relative;
+    &:before{
+      content: "Хит";
+      position: absolute;
+      top:0;
+      left: -5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      background: $header-link;
+      padding:8px 20px;
+      text-align: center;
+    }
+    img{
+      margin:0 0 40px;
+    
+     
+    }
+    &__title{
+      margin:0 0 30px;
+    }
+    
+    &__outofstock{
+      color:$warning-color;
+    }
+    &__instoke{
+      color:$success-color;
+    }
+    &__price{
+      font-size: 20px;
+      font-weight: 600;
+      img{
+        color:$black;
+       
+      }
+      &__unavailable{
+        color:#909090;
+      }
+    }
+    &__button{
+      background:$header-link;
+      font-size: 15px;
+      margin:0 0 30px;
+      &:active{
+        background: $success-color;
+        color:$white;
+      }
+      &____instock{
+        color:$success-color;
+      }
+      &__outofstock{
+        background: #cccccc;
+        color:$white;
+      }
+    }
+   
+  }
+}
+.shop-slider {
+  position: relative;
+  margin: 0 auto;
+ 
+  &__arrows {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+  
+    [data-prev],
+    [data-next] {
+      position: absolute;
+      transform: translateY(-100%);
+      &:hover{
+        cursor: pointer;
+       }
+     
+    }
+    [data-prev] {
+      left: -35px;
+     
+    }
+    [data-next] {
+      right:-35px;
+    }
+  }
+}
+.shop_slide{
+border: 1px solid #e5e5e5;
+}
+.video{
+  margin: 0 0 18px;
+  &____title{
+margin:0 0 32px;
+  }
+  &__item{
+    position: relative;
+   
+    img{
+      filter:brightness(0.1);
+      &:hover{
+        filter:none;
+      }
+      
+      margin:0 0 15px;
+      
+      
+    }
+    
+  }
+}
+.video-slider {
+  position: relative;
+  margin: 0 auto;
+ 
+  &__arrows {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+  
+    [data-prev],
+    [data-next] {
+      position: absolute;
+      transform: translateY(-100%);
+      &:hover{
+        cursor: pointer;
+       }
+     
+    }
+    [data-prev] {
+      left:50px;
+     
+    }
+    [data-next] {
+      right:50px;
+    }
+  }
+}
+
+.partners{
+  margin:0 0 105px;
+  img{
+    margin:55px 15px 0 0;
+    filter: grayscale(1) blur(1px);
+  
+    &:hover{
+      filter: none;
+      transform: scale(1.2,1.2);
+      transition-timing-function: ease-out;
+      transition-duration: 550ms;
+    }
+  }
+}
+.decription{
+  margin: 0 0 48px;
+  &__title{
+    font-weight:900;
+    font-size: 22;
+    text-transform: uppercase;
+    margin:0 0 32px;
+  }
+  p{
+    margin-bottom:30px;
+    color:$secondary-color;
+  }
+}
+.form-registration-group{
+  a{
+    color:$black;
+  }
+}
